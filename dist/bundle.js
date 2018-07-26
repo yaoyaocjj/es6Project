@@ -78,9 +78,9 @@ __webpack_require__(2);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-const paragraph = document.createElement('p');
+var paragraph = document.createElement('p');
 paragraph.innerHTML = _message2.default;
-document.body.prepend(paragraph);
+document.body.appendChild(paragraph);
 
 /***/ }),
 /* 1 */
@@ -90,9 +90,12 @@ document.body.prepend(paragraph);
 
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
-exports.default = "Hello World";
+var message = function message() {
+    return "This is a test.";
+};
+exports.default = message();
 
 /***/ }),
 /* 2 */

@@ -20,7 +20,9 @@ module.exports = {
         filename: 'bundle.js'
     },
     plugins: [
-        new HtmlWebpackPlugin(),
+        new HtmlWebpackPlugin({
+            template: 'index.html'
+        }),
         extractScss
     ],
     module: {
