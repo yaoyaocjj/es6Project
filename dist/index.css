@@ -1,2 +1,8 @@
+.background-practice .background-origin {
+  width: 300px;
+  height: 300px;
+  background: url(bb19aba009dcb7e227ae18563b308502.jpg);
+  background-origin: border-box; }
+
 body p {
   color: red; }
