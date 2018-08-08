@@ -1,6 +1,5 @@
-import message from './message';
-import './styles/index.scss';
+import './styles/index.scss'
+import navigation from './components/navigation'
 
-const paragraph = document.createElement('p');
-paragraph.innerHTML = message;
-document.body.appendChild(paragraph);
+const generateNavigation = () => navigation();
+generateNavigation();

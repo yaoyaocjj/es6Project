@@ -1,0 +1,8 @@
+.header {
+  background-image: linear-gradient(95deg, #ef5ba1, rgba(106, 37, 105, 0.75) 51%, #26bdcf);
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 70px; }
+
+/*# sourceMappingURL=header.css.map */

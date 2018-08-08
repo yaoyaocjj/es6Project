@@ -1,0 +1,9 @@
+@import url(./header.css);
+@import url(./backgroundPracotice.css);
+@import url(./navigation.css);
+@import url(./content.css);
+body {
+  margin: 0;
+  padding: 0; }
+
+/*# sourceMappingURL=index.css.map */

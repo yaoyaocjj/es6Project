@@ -1,0 +1,17 @@
+.navigation {
+  height: 100%;
+  display: flex;
+  justify-content: center; }
+  .navigation .tab {
+    text-decoration: none;
+    width: 150px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    cursor: pointer; }
+    .navigation .tab:hover {
+      background: rgba(255, 255, 255, 0.2); }
+
+/*# sourceMappingURL=navigation.css.map */

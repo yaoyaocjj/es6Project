@@ -57,7 +57,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
+/******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(__webpack_require__.s = 0);
@@ -70,38 +70,44 @@
 "use strict";
 
 
-var _message = __webpack_require__(1);
+__webpack_require__(1);
 
-var _message2 = _interopRequireDefault(_message);
+var _navigation = __webpack_require__(2);
 
-__webpack_require__(2);
+var _navigation2 = _interopRequireDefault(_navigation);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var paragraph = document.createElement('p');
-paragraph.innerHTML = _message2.default;
-document.body.appendChild(paragraph);
+var generateNavigation = (0, _navigation2.default)();
+generateNavigation();
 
 /***/ }),
 /* 1 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
-var message = function message() {
-    return "This is a test.";
-};
-exports.default = message();
+exports.default = navigation;
+function navigation() {
+  tabContent.map(function (item) {
+    var tab = document.createElement("li");
+    tab.className += ' ' + item.name;
+    tab.innerText = item.value;
+    document.querySelector('navigation').appendChild(tab);
+  });
+}
 
-/***/ }),
-/* 2 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
+var tabContent = [{ name: 'recruitment-process', value: '校招流程' }, { name: 'notification', value: '校招公告' }, { name: 'internal-recommend', value: '内推通道' }, { name: 'about-us', value: '关于ThoughtWorks' }];
 
 /***/ })
 /******/ ]);

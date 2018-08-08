@@ -1,7 +1,9 @@
-@import './backgroundPracotice.scss';
+@import './header.css';
+@import './backgroundPracotice.css';
+@import './navigation.css';
+@import './content.css';
 
 body {
-  p {
-    color: red;
-  }
+  margin: 0;
+  padding: 0;
 }
