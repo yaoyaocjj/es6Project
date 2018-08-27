@@ -1,24 +1,97 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>background practice</title>
-</head>
-<body>
-<div id="demo">
-    <h2>Create a es6Project by webpack and babel </h2>
-    <hr/>
-    <p>
-        渭城朝雨浥轻尘，客舍青青柳色新。劝君更尽一杯酒，西出阳关无故人。这首诗是著名诗人<a class="tooltip" id="tooltip1">王勃</a>的作品。借此来表达自己对友人的依依惜别之意。
-    </p>
-
-    <p>
-        我喜欢古诗，因为它能给别人更多的理解，想象。古诗是很唯美的，随处可见的美景，比如<a class="tooltip" id="tooltip2">荷花</a>，便有，接天莲叶无穷碧，映日荷花别样红。多美的诗呀！
-    </p>
-</div>
-<div class="background-practice">
-    <div class="background-position"></div>
-    <div class="background-gradient"></div>
-</div>
-</body>
-</html>
+<head><link href="/index.css" rel="stylesheet"></head>Html Webpack Plugin:
+<pre>
+  Error: Child compilation failed:
+  Entry module not found: Error: Can't resolve '/Users/jjuchen/practice/es6Project/background.html' in '/Users/jjuchen/practice/es6Project':
+  Error: Can't resolve '/Users/jjuchen/practice/es6Project/background.html' in '/Users/jjuchen/practice/es6Project'
+  
+  - compiler.js:79 childCompiler.runAsChild
+    [es6Project]/[html-webpack-plugin]/lib/compiler.js:79:16
+  
+  - Compiler.js:300 compile
+    [es6Project]/[webpack]/lib/Compiler.js:300:11
+  
+  - Compiler.js:510 applyPluginsAsync.err
+    [es6Project]/[webpack]/lib/Compiler.js:510:14
+  
+  - Tapable.js:202 next
+    [es6Project]/[tapable]/lib/Tapable.js:202:11
+  
+  - CachePlugin.js:78 Compiler.<anonymous>
+    [es6Project]/[webpack]/lib/CachePlugin.js:78:5
+  
+  - Tapable.js:206 Compiler.applyPluginsAsyncSeries
+    [es6Project]/[tapable]/lib/Tapable.js:206:13
+  
+  - Compiler.js:507 compilation.seal.err
+    [es6Project]/[webpack]/lib/Compiler.js:507:11
+  
+  - Tapable.js:195 Compilation.applyPluginsAsyncSeries
+    [es6Project]/[tapable]/lib/Tapable.js:195:46
+  
+  - Compilation.js:683 applyPluginsAsync.err
+    [es6Project]/[webpack]/lib/Compilation.js:683:19
+  
+  - Tapable.js:195 Compilation.applyPluginsAsyncSeries
+    [es6Project]/[tapable]/lib/Tapable.js:195:46
+  
+  - Compilation.js:674 applyPluginsAsync.err
+    [es6Project]/[webpack]/lib/Compilation.js:674:11
+  
+  - Tapable.js:195 Compilation.applyPluginsAsyncSeries
+    [es6Project]/[tapable]/lib/Tapable.js:195:46
+  
+  - Compilation.js:669 applyPluginsAsync.err
+    [es6Project]/[webpack]/lib/Compilation.js:669:10
+  
+  - Tapable.js:195 Compilation.applyPluginsAsyncSeries
+    [es6Project]/[tapable]/lib/Tapable.js:195:46
+  
+  - Compilation.js:665 applyPluginsAsyncSeries
+    [es6Project]/[webpack]/lib/Compilation.js:665:9
+  
+  - Tapable.js:195 Compilation.applyPluginsAsyncSeries
+    [es6Project]/[tapable]/lib/Tapable.js:195:46
+  
+  - Compilation.js:608 Compilation.seal
+    [es6Project]/[webpack]/lib/Compilation.js:608:8
+  
+  - Compiler.js:504 applyPluginsParallel.err
+    [es6Project]/[webpack]/lib/Compiler.js:504:17
+  
+  - Tapable.js:289 
+    [es6Project]/[tapable]/lib/Tapable.js:289:11
+  
+  - Compilation.js:511 _addModuleChain
+    [es6Project]/[webpack]/lib/Compilation.js:511:11
+  
+  - Compilation.js:394 errorAndCallback.bail
+    [es6Project]/[webpack]/lib/Compilation.js:394:4
+  
+  - Compilation.js:417 moduleFactory.create
+    [es6Project]/[webpack]/lib/Compilation.js:417:13
+  
+  - NormalModuleFactory.js:237 factory
+    [es6Project]/[webpack]/lib/NormalModuleFactory.js:237:20
+  
+  - NormalModuleFactory.js:60 resolver
+    [es6Project]/[webpack]/lib/NormalModuleFactory.js:60:20
+  
+  - NormalModuleFactory.js:127 asyncLib.parallel
+    [es6Project]/[webpack]/lib/NormalModuleFactory.js:127:20
+  
+  - async.js:3888 
+    [es6Project]/[async]/dist/async.js:3888:9
+  
+  - async.js:473 
+    [es6Project]/[async]/dist/async.js:473:16
+  
+  - async.js:1062 iteratorCallback
+    [es6Project]/[async]/dist/async.js:1062:13
+  
+  - async.js:969 
+    [es6Project]/[async]/dist/async.js:969:16
+  
+  - async.js:3885 
+    [es6Project]/[async]/dist/async.js:3885:13
+  
+</pre><script type="text/javascript" src="/bundle.js"></script>
