@@ -13,4 +13,37 @@
   background-size: 50px 50px;
   background-image: linear-gradient(to top, transparent 50%, rgba(200, 0, 0, 0.5) 50%), linear-gradient(to left, transparent 50%, rgba(200, 0, 0, 0.5) 50%); }
 
+.animation {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  border: solid 2px #26bdcf; }
+  .animation .animation-box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    background: #ef5ba1;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px #999;
+    animation: ball 5s ease-in-out 3; }
+
+@keyframes ball {
+  0% {
+    left: 0;
+    top: 0; }
+  25% {
+    left: 250px;
+    top: 0; }
+  50% {
+    left: 250px;
+    top: 250px; }
+  75% {
+    left: 0;
+    top: 250px; }
+  100% {
+    left: 0;
+    top: 0; } }
+
 /*# sourceMappingURL=backgroundPracotice.css.map */
