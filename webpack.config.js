@@ -22,7 +22,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: 'index.html'
+            template: './src/view/background.html'
         }),
         extractScss
     ],
