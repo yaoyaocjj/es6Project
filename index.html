@@ -21,6 +21,25 @@
 <section id="about-us" class="section about-us">
     about-us
 </section>
+<form>
+    <p>姓名：<input type="text" value=""></p>
+    <p>性别：
+        <label><input type="radio" name="gender" value="man">男</label>
+        <label><input type="radio" name="gender" value="woman">女</label>
+    </p>
+    <p>请选择一种颜色：<input type="color" name="color"></p>
+    <p><input type="submit" value="提交"></p>
+</form>
+
+<form autocomplete="on">
+    <input type="text" id="city" list="cityList">
+    <datalist id="cityList" style="display: none">
+        <option value="BeiJing">BeiJing</option>
+        <option value="QingDao">QingDao</option>
+        <option value="QingZhou">QingZhou</option>
+        <option value="QingHai">QingHai</option>
+    </datalist>
+</form>
 <div class = "tooltip">
     <ul class="tooltip-container">
         <li class="tooltip-item">tab1<span class="tooltip-text">tooltip1</span></li>
@@ -28,5 +47,7 @@
         <li class="tooltip-item">tab3<span class="tooltip-text">tooltip3</span></li>
     </ul>
 </div>
+
+<div><a href="./src/view/background.html">backgroundPractice</a></div>
 </body>
 </html>
