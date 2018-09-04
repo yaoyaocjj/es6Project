@@ -1,4 +1,4 @@
-export default function navigation() {
+export default function generateNavigation() {
   const fragment = document.createDocumentFragment();
   tabContent.map((item) => {
     const tab = document.createElement("a");
